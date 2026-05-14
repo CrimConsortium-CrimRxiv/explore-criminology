@@ -232,6 +232,21 @@ a:hover { border-bottom-color: var(--color-primary); }
   color: var(--color-text);
 }
 
+/* 'Join' nav CTA — understated outline, not a flashy filled button */
+.nav-link-cta {
+  margin-left: var(--space-2);
+  color: var(--color-primary);
+  border: 1px solid color-mix(in srgb, var(--color-primary) 55%, transparent);
+}
+.nav-link-cta:hover {
+  color: var(--color-text-inverse);
+  background: var(--color-primary);
+  border-color: var(--color-primary);
+}
+[data-theme="dark"] .nav-link-cta:hover {
+  color: #0d0d0d;
+}
+
 .header-actions {
   display: flex;
   gap: var(--space-2);
@@ -257,7 +272,6 @@ a:hover { border-bottom-color: var(--color-primary); }
 /* Hero */
 .hero {
   margin-bottom: var(--space-10);
-  max-width: 760px;
 }
 .hero-eyebrow {
   font-size: var(--text-xs);
@@ -284,7 +298,6 @@ a:hover { border-bottom-color: var(--color-primary); }
   font-family: var(--font-display);
   font-weight: 400;
   line-height: 1.5;
-  max-width: 68ch;
 }
 .hero-lead a {
   color: inherit;
@@ -531,6 +544,31 @@ a:hover { border-bottom-color: var(--color-primary); }
   color: var(--color-text-faint);
 }
 
+.footer-social {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-1);
+}
+.footer-social a {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 36px;
+  height: 36px;
+  border-radius: var(--radius-md);
+  color: var(--color-text-muted);
+  border: 1px solid transparent;
+  transition: color var(--transition), background var(--transition), border-color var(--transition);
+}
+.footer-social a:hover {
+  color: var(--color-primary);
+  background: var(--color-surface-offset);
+  border-color: var(--color-border);
+}
+.footer-social svg {
+  display: block;
+}
+
 /* Small screens */
 @media (max-width: 640px) {
   .site-header {
@@ -543,8 +581,12 @@ a:hover { border-bottom-color: var(--color-primary); }
     padding-top: var(--space-2);
     border-top: 1px solid var(--color-divider);
     margin-top: var(--space-2);
+    flex-wrap: wrap;
   }
   .nav-link {
     padding: var(--space-2);
+  }
+  .nav-link-cta {
+    margin-left: 0;
   }
 }
