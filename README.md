@@ -1,7 +1,7 @@
 # Explore Criminology
 
-A lightweight public landing page that points visitors to the CrimRxiv
-Consortium's family of criminology dashboards:
+A lightweight public landing page that points visitors to CrimConsortium's
+family of criminology dashboards:
 
 - **Experts** — [Faculty Explorer](https://crimconsortium.github.io/criminology-faculty-explorer/)
 - **Mentors** — [Mentor Match](https://crimconsortium.github.io/mentor-match/)
@@ -47,5 +47,5 @@ preference detection and persistence).
 
 ## License
 
-Content © CrimRxiv Consortium. Code released under the MIT License — see
+Content © CrimConsortium. Code released under the MIT License — see
 `LICENSE` if present, or treat as MIT.
