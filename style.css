@@ -173,15 +173,16 @@ a:hover { border-bottom-color: var(--color-primary); }
 .brand {
   display: inline-flex;
   align-items: center;
-  gap: var(--space-3);
+  gap: var(--space-4);
   color: var(--color-text);
   border-bottom: none;
+  padding: var(--space-1) var(--space-2) var(--space-1) var(--space-1);
 }
 .brand:hover { border-bottom: none; }
 
 .brand-mark {
   width: auto;
-  height: 36px;
+  height: 56px;
   color: var(--color-primary);
   flex-shrink: 0;
   object-fit: contain;
