@@ -31,9 +31,9 @@
   },
   {
     "slug": "hawaiicrimelab",
-    "name": "Hawai‘i Crime Lab",
+    "name": "Hawai\u2018i Crime Lab",
     "url": "https://www.crimrxiv.com/hawaiicrimelab",
-    "logo": null
+    "logo": "members/logos/hawaiicrimelab.jpg"
   },
   {
     "slug": "johnjayrec1c",
@@ -45,7 +45,7 @@
     "slug": "jhc",
     "name": "Journal of Historical Criminology",
     "url": "https://www.crimrxiv.com/jhc",
-    "logo": null
+    "logo": "members/logos/jhc.jpg"
   },
   {
     "slug": "kf1c",
@@ -85,7 +85,7 @@
   },
   {
     "slug": "seic",
-    "name": "Sociedad Española de Investigación Criminológica",
+    "name": "Sociedad Espa\u00f1ola de Investigaci\u00f3n Criminol\u00f3gica",
     "url": "https://www.crimrxiv.com/seic",
     "logo": "members/logos/seic.jpg"
   },
@@ -127,7 +127,7 @@
   },
   {
     "slug": "montreal1c",
-    "name": "Université de Montréal, École de Criminologie",
+    "name": "Universit\u00e9 de Montr\u00e9al, \u00c9cole de Criminologie",
     "url": "https://www.crimrxiv.com/montreal1c",
     "logo": "members/logos/montreal1c.jpg"
   },
@@ -169,7 +169,7 @@
   },
   {
     "slug": "umsl1c",
-    "name": "University of Missouri—St. Louis, Department of Criminology & Criminal Justice",
+    "name": "University of Missouri\u2014St. Louis, Department of Criminology & Criminal Justice",
     "url": "https://www.crimrxiv.com/umsl1c",
     "logo": "members/logos/umsl1c.jpg"
   },
