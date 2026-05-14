@@ -403,7 +403,7 @@ a:hover { border-bottom-color: var(--color-primary); }
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: var(--space-5);
-  margin-bottom: var(--space-16);
+  margin-bottom: var(--space-12);
 }
 
 @media (max-width: 900px) {
@@ -499,6 +499,86 @@ a:hover { border-bottom-color: var(--color-primary); }
   color: var(--color-text);
   border-bottom-color: var(--color-text-muted);
 }
+
+/* Members grid — matches crimrxiv.com/consortium tile style:
+   dark tile, logo as background, member name overlaid white serif top-left,
+   subtle dim layer over the logo so the name stays readable. */
+.members {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: var(--space-4);
+  margin-bottom: var(--space-16);
+}
+
+@media (max-width: 1024px) {
+  .members { grid-template-columns: repeat(3, 1fr); }
+}
+@media (max-width: 720px) {
+  .members { grid-template-columns: repeat(2, 1fr); }
+}
+@media (max-width: 420px) {
+  .members { grid-template-columns: 1fr; }
+}
+
+.member-tile {
+  position: relative;
+  display: block;
+  aspect-ratio: 1 / 1;
+  background-color: #000;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 78%;
+  border-radius: var(--radius-md);
+  overflow: hidden;
+  color: #fff;
+  border-bottom: none;
+  transition: transform var(--transition), box-shadow var(--transition);
+}
+.member-tile:hover {
+  border-bottom: none;
+  box-shadow: var(--shadow-md);
+  transform: translateY(-2px);
+}
+.member-tile::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(180deg, rgba(0,0,0,0.45) 0%, rgba(0,0,0,0.0) 38%);
+  pointer-events: none;
+}
+.member-tile-name {
+  position: absolute;
+  top: 0.85rem;
+  left: 0.95rem;
+  right: 0.95rem;
+  z-index: 1;
+  font-family: var(--font-display);
+  font-weight: 500;
+  font-size: 0.78rem;
+  line-height: 1.25;
+  color: #fff;
+  letter-spacing: -0.005em;
+  text-shadow: 0 1px 2px rgba(0,0,0,0.55);
+  display: -webkit-box;
+  -webkit-line-clamp: 4;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+.member-tile.no-logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: var(--space-4);
+}
+.member-tile.no-logo .member-tile-name {
+  position: static;
+  text-align: center;
+  color: var(--color-primary);
+  font-size: 0.95rem;
+  -webkit-line-clamp: unset;
+  font-weight: 600;
+}
+.member-tile.no-logo::after { display: none; }
 
 /* Footer */
 .site-footer {

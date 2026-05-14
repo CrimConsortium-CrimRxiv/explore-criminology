@@ -1,0 +1,200 @@
+[
+  {
+    "slug": "acjs1c",
+    "name": "Academy of Criminal Justice Sciences",
+    "url": "https://www.crimrxiv.com/acjs1c",
+    "logo": "members/logos/acjs1c.jpg"
+  },
+  {
+    "slug": "crim2",
+    "name": "Criminology: An Interdisciplinary Journal",
+    "url": "https://www.crimrxiv.com/crim2",
+    "logo": "members/logos/crim2.jpg"
+  },
+  {
+    "slug": "eur",
+    "name": "Erasmus University Rotterdam Library",
+    "url": "https://www.crimrxiv.com/eur",
+    "logo": "members/logos/eur.jpg"
+  },
+  {
+    "slug": "cybersecurity1c",
+    "name": "Georgia State University, Evidence-Based Cybersecurity Research Group",
+    "url": "https://www.crimrxiv.com/cybersecurity1c",
+    "logo": "members/logos/cybersecurity1c.jpg"
+  },
+  {
+    "slug": "ghent1c",
+    "name": "Ghent University, Department of Criminology",
+    "url": "https://www.crimrxiv.com/ghent1c",
+    "logo": "members/logos/ghent1c.jpg"
+  },
+  {
+    "slug": "hawaiicrimelab",
+    "name": "Hawai‘i Crime Lab",
+    "url": "https://www.crimrxiv.com/hawaiicrimelab",
+    "logo": null
+  },
+  {
+    "slug": "johnjayrec1c",
+    "name": "John Jay College of Criminal Justice, Research & Evaluation Center",
+    "url": "https://www.crimrxiv.com/johnjayrec1c",
+    "logo": "members/logos/johnjayrec1c.jpg"
+  },
+  {
+    "slug": "jhc",
+    "name": "Journal of Historical Criminology",
+    "url": "https://www.crimrxiv.com/jhc",
+    "logo": null
+  },
+  {
+    "slug": "kf1c",
+    "name": "Knowledge Futures, creator of PubPub",
+    "url": "https://www.crimrxiv.com/kf1c",
+    "logo": "members/logos/kf1c.jpg"
+  },
+  {
+    "slug": "mpicsl",
+    "name": "Max Planck Institute for the Study of Crime, Security & Law",
+    "url": "https://www.crimrxiv.com/mpicsl",
+    "logo": "members/logos/mpicsl.jpg"
+  },
+  {
+    "slug": "northeasternccj",
+    "name": "Northeastern University, School of Criminology & Criminal Justice",
+    "url": "https://www.crimrxiv.com/northeasternccj",
+    "logo": "members/logos/northeasternccj.jpg"
+  },
+  {
+    "slug": "ohcp1c",
+    "name": "Oral History of Criminology Project",
+    "url": "https://www.crimrxiv.com/ohcp1c",
+    "logo": "members/logos/ohcp1c.jpg"
+  },
+  {
+    "slug": "philadelphia-dao-datalab",
+    "name": "Philadelphia District Attorney's Office, DATA Lab",
+    "url": "https://www.crimrxiv.com/philadelphia-dao-datalab",
+    "logo": "members/logos/philadelphia-dao-datalab.jpg"
+  },
+  {
+    "slug": "sfu1c",
+    "name": "Simon Fraser University, School of Criminology",
+    "url": "https://www.crimrxiv.com/sfu1c",
+    "logo": "members/logos/sfu1c.jpg"
+  },
+  {
+    "slug": "seic",
+    "name": "Sociedad Española de Investigación Criminológica",
+    "url": "https://www.crimrxiv.com/seic",
+    "logo": "members/logos/seic.jpg"
+  },
+  {
+    "slug": "sebp",
+    "name": "Society of Evidence Based Policing",
+    "url": "https://www.crimrxiv.com/sebp",
+    "logo": "members/logos/sebp.jpg"
+  },
+  {
+    "slug": "sascv",
+    "name": "South Asian Society of Criminology and Victimology",
+    "url": "https://www.crimrxiv.com/sascv",
+    "logo": "members/logos/sascv.jpg"
+  },
+  {
+    "slug": "temple1c",
+    "name": "Temple University, Department of Criminal Justice",
+    "url": "https://www.crimrxiv.com/temple1c",
+    "logo": "members/logos/temple1c.jpg"
+  },
+  {
+    "slug": "txst",
+    "name": "Texas State University, School of Criminal Justice and Criminology",
+    "url": "https://www.crimrxiv.com/txst",
+    "logo": "members/logos/txst.jpg"
+  },
+  {
+    "slug": "ucirvine",
+    "name": "UC Irvine, Department of Criminology, Law and Society",
+    "url": "https://www.crimrxiv.com/ucirvine",
+    "logo": "members/logos/ucirvine.jpg"
+  },
+  {
+    "slug": "benthamproject1c",
+    "name": "UCL, Bentham Project",
+    "url": "https://www.crimrxiv.com/benthamproject1c",
+    "logo": "members/logos/benthamproject1c.jpg"
+  },
+  {
+    "slug": "montreal1c",
+    "name": "Université de Montréal, École de Criminologie",
+    "url": "https://www.crimrxiv.com/montreal1c",
+    "logo": "members/logos/montreal1c.jpg"
+  },
+  {
+    "slug": "prisonsresearch1c",
+    "name": "University of Cambridge, Institute of Criminology, Prisons Research Centre",
+    "url": "https://www.crimrxiv.com/prisonsresearch1c",
+    "logo": "members/logos/prisonsresearch1c.jpg"
+  },
+  {
+    "slug": "uga1c",
+    "name": "University of Georgia, Department of Sociology",
+    "url": "https://www.crimrxiv.com/uga1c",
+    "logo": "members/logos/uga1c.jpg"
+  },
+  {
+    "slug": "leeds",
+    "name": "University of Leeds, Centre for Criminal Justice Studies",
+    "url": "https://www.crimrxiv.com/leeds",
+    "logo": "members/logos/leeds.jpg"
+  },
+  {
+    "slug": "liverpool",
+    "name": "University of Liverpool, Department of Sociology, Social Policy and Criminology",
+    "url": "https://www.crimrxiv.com/liverpool",
+    "logo": "members/logos/liverpool.jpg"
+  },
+  {
+    "slug": "uomcriminology",
+    "name": "University of Manchester, Department of Criminology | Home of CrimRxiv",
+    "url": "https://www.crimrxiv.com/uomcriminology",
+    "logo": "members/logos/uomcriminology.jpg"
+  },
+  {
+    "slug": "uomopenresearch",
+    "name": "University of Manchester, Office for Open Research",
+    "url": "https://www.crimrxiv.com/uomopenresearch",
+    "logo": "members/logos/uomopenresearch.jpg"
+  },
+  {
+    "slug": "umsl1c",
+    "name": "University of Missouri—St. Louis, Department of Criminology & Criminal Justice",
+    "url": "https://www.crimrxiv.com/umsl1c",
+    "logo": "members/logos/umsl1c.jpg"
+  },
+  {
+    "slug": "unosccj",
+    "name": "University of Nebraska Omaha, School of Criminology & Criminal Justice",
+    "url": "https://www.crimrxiv.com/unosccj",
+    "logo": "members/logos/unosccj.jpg"
+  },
+  {
+    "slug": "southcarolina",
+    "name": "University of South Carolina, Department of Criminology and Criminal Justice",
+    "url": "https://www.crimrxiv.com/southcarolina",
+    "logo": "members/logos/southcarolina.jpg"
+  },
+  {
+    "slug": "utd1c",
+    "name": "University of Texas at Dallas, Criminology & Criminal Justice",
+    "url": "https://www.crimrxiv.com/utd1c",
+    "logo": "members/logos/utd1c.jpg"
+  },
+  {
+    "slug": "nziscs",
+    "name": "University of Waikato, Te Puna Haumaru New Zealand Institute for Security & Crime Science",
+    "url": "https://www.crimrxiv.com/nziscs",
+    "logo": "members/logos/nziscs.jpg"
+  }
+]
