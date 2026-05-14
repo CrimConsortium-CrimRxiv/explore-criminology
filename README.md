@@ -11,29 +11,22 @@ The site is fully static and hosted via GitHub Pages.
 
 ## Hosting
 
-- **Current URL:** `https://crimconsortium.github.io/explore-criminology/`
-- **Planned custom domain:** `https://explore.crimrxiv.com/` (configured via
-  `CNAME` once DNS is pointed at GitHub Pages).
+- **Primary URL:** https://crimconsortium.com/
+- **Fallback:** https://crimconsortium.github.io/explore-criminology/
 
-The site has no hard-coded references to the GitHub Pages URL — links,
-canonical URL, and Open Graph metadata already target the future
-`explore.crimrxiv.com` identity, so a custom-domain cutover is a DNS-and-CNAME
-change with no markup rewrite required.
+The custom domain is configured via the `CNAME` file at the repo root and
+apex `A`/`AAAA` records in Cloudflare DNS pointing at GitHub Pages.
 
-## Custom-domain cutover
+## DNS configuration (Cloudflare, zone `crimconsortium.com`)
 
-When ready to move to the custom domain:
+Apex (`@` / `crimconsortium.com`):
 
-1. Add a file named `CNAME` at the repo root containing a single line:
-   `explore.crimrxiv.com`
-2. In Cloudflare DNS for `crimrxiv.com`, add a `CNAME` record:
-   - **Name:** `explore`
-   - **Target:** `crimconsortium.github.io`
-   - **Proxy:** DNS only (gray cloud) for the initial certificate issuance;
-     can be re-enabled to proxied after Pages confirms the cert.
-3. In the repo's GitHub Pages settings, set the custom domain to
-   `explore.crimrxiv.com` and enable **Enforce HTTPS** once the
-   certificate is provisioned.
+- **A:** `185.199.108.153`, `185.199.109.153`, `185.199.110.153`, `185.199.111.153`
+- **AAAA:** `2606:50c0:8000::153`, `2606:50c0:8001::153`, `2606:50c0:8002::153`, `2606:50c0:8003::153`
+- Proxy status: **DNS only** during initial cert issuance. Can be switched
+  to **Proxied** afterward for Cloudflare CDN/security benefits.
+- Cloudflare SSL/TLS mode should be **Full** (not Flexible) once proxied,
+  since GitHub Pages serves HTTPS at the origin.
 
 ## Design
 
