@@ -590,10 +590,9 @@ a:hover { border-bottom-color: var(--color-primary); }
   transition: transform var(--transition), box-shadow var(--transition);
 }
 
-/* Waikato: logo is centered tall; shrink + drop so it clears the title. */
+/* Waikato: logo is centered tall; drop it so it clears the title. */
 .member-tile[data-slug="nziscs"] {
-  background-size: 78%;
-  background-position: center 100%;
+  background-position: center bottom;
 }
 .member-tile:hover {
   border-bottom: none;
