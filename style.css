@@ -371,6 +371,39 @@ a:hover { border-bottom-color: var(--color-primary); }
   }
 }
 
+/* Secondary feature panel — visually subordinate to the CrimRxiv panel above. */
+.feature-panel-secondary {
+  margin-left: var(--space-8);
+  max-width: 78%;
+  padding: var(--space-6) var(--space-7);
+  border-left-width: 3px;
+  gap: var(--space-2);
+  background: transparent;
+}
+
+.feature-panel-secondary .feature-title {
+  font-size: var(--text-xl);
+}
+
+.feature-panel-secondary .feature-lead {
+  font-size: var(--text-base);
+  line-height: 1.55;
+}
+
+@media (max-width: 800px) {
+  .feature-panel-secondary {
+    margin-left: var(--space-5);
+    max-width: 100%;
+  }
+}
+
+@media (max-width: 640px) {
+  .feature-panel-secondary {
+    margin-left: var(--space-3);
+    padding: var(--space-5) var(--space-4);
+  }
+}
+
 /* Section heading (above the dashboards row) */
 .section-heading {
   display: flex;
