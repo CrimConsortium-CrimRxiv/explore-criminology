@@ -60,11 +60,12 @@
     const html = members.map(function (m) {
       const safeName = String(m.name).replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;');
       const safeUrl = String(m.url);
+      const safeSlug = String(m.slug || '').replace(/[^a-z0-9_-]/gi, '');
       if (m.logo) {
         const safeLogo = String(m.logo).replace(/"/g,'%22');
-        return '<a class="member-tile" href="' + safeUrl + '" target="_blank" rel="noopener" title="' + safeName + '" style="background-image:url(\'' + safeLogo + '\')"><span class="member-tile-name">' + safeName + '</span></a>';
+        return '<a class="member-tile" data-slug="' + safeSlug + '" href="' + safeUrl + '" target="_blank" rel="noopener" title="' + safeName + '" style="background-image:url(\'' + safeLogo + '\')"><span class="member-tile-name">' + safeName + '</span></a>';
       }
-      return '<a class="member-tile no-logo" href="' + safeUrl + '" target="_blank" rel="noopener" title="' + safeName + '"><span class="member-tile-name">' + safeName + '</span></a>';
+      return '<a class="member-tile no-logo" data-slug="' + safeSlug + '" href="' + safeUrl + '" target="_blank" rel="noopener" title="' + safeName + '"><span class="member-tile-name">' + safeName + '</span></a>';
     }).join('');
     grid.innerHTML = html;
   }
