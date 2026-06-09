@@ -456,7 +456,7 @@ a:hover { border-bottom-color: var(--color-primary); }
 /* Dashboard cards */
 .dashboards {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
   gap: var(--space-5);
   margin-bottom: var(--space-12);
 }
