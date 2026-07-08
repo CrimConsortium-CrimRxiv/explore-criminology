@@ -1,0 +1,7 @@
+# https://crimconsortium.com/robots.txt
+# Everything is allowed — this is a public landing page.
+
+User-agent: *
+Allow: /
+
+Sitemap: https://crimconsortium.com/sitemap.xml
