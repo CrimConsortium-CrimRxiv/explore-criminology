@@ -28,23 +28,63 @@
       href="https://fonts.googleapis.com/css2?family=Source+Serif+4:ital,opsz,wght@0,8..60,600;0,8..60,700;1,8..60,500&family=Inter:wght@400;500;600;700&display=swap"
     />
 
-    <!-- Google tag (gtag.js) -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-8T4E6YJ1FG"></script>
+    <!-- Google tag (gtag.js) — Google Ads -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=AW-18294351442"></script>
     <script>
       window.dataLayer = window.dataLayer || [];
       function gtag(){dataLayer.push(arguments);}
+
+      // Consent Mode v2 defaults — explicitly grant so nothing silently downgrades later.
+      gtag('consent', 'default', {
+        'ad_storage': 'granted',
+        'ad_user_data': 'granted',
+        'ad_personalization': 'granted',
+        'analytics_storage': 'granted',
+        'functionality_storage': 'granted',
+        'personalization_storage': 'granted',
+        'security_storage': 'granted'
+      });
+
+      // Rehydrate GCLID captured before the Stripe checkout redirect, if present
+      // and no fresh gclid is in the current URL. Keeps ad attribution intact.
+      (function() {
+        try {
+          var params = new URLSearchParams(window.location.search);
+          var freshGclid = params.get('gclid');
+          if (!freshGclid) {
+            var stored = localStorage.getItem('gclid');
+            var storedTs = parseInt(localStorage.getItem('gclid_ts') || '0', 10);
+            // Only rehydrate if captured within the last 90 days (Ads attribution window).
+            var ninetyDaysMs = 90 * 24 * 60 * 60 * 1000;
+            if (stored && (Date.now() - storedTs) < ninetyDaysMs) {
+              gtag('set', { 'gclid': stored });
+            }
+          }
+        } catch (e) {}
+      })();
+
       gtag('js', new Date());
-      gtag('config', 'G-8T4E6YJ1FG');
+      gtag('config', 'AW-18294351442');
     </script>
 
-    <!-- Event snippet for Purchase conversion page -->
+    <!-- Event snippet for Individual Member Signup conversion page -->
     <script>
-      gtag('event', 'conversion', {
-          'send_to': 'AW-18294351442/aKQICMed1NIcENLMtpNE',
-          'value': 1.0,
+      (function() {
+        // Use Stripe checkout session ID as unique transaction_id (prevents
+        // double-counting on refresh). Falls back to a UUID if session_id is
+        // absent (e.g. direct visit or Stripe success URL not yet configured).
+        var params = new URLSearchParams(window.location.search);
+        var sessionId = params.get('session_id');
+        var txnId = sessionId ||
+          ('tx-' + Date.now() + '-' + Math.random().toString(36).slice(2, 10));
+
+        gtag('event', 'conversion', {
+          'send_to': 'AW-18294351442/dLKgCLOiwtIcENLMtpNE',
+          'value': 0,                 // TODO: replace with real amount_total via Cloudflare Worker (option C)
           'currency': 'USD',
-          'transaction_id': ''
-      });
+          'transaction_id': txnId
+        });
+      })();
     </script>
 
     <style>

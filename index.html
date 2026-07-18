@@ -27,7 +27,7 @@
     <meta property="og:image:width" content="1200" />
     <meta property="og:image:height" content="630" />
     <meta property="og:image:alt" content="CrimConsortium — Making criminology free and useful" />
-    <meta property="og:updated_time" content="2026-07-18T13:00:00-04:00" />
+    <meta property="og:updated_time" content="2026-07-18T14:30:00-04:00" />
     <meta property="og:see_also" content="https://www.crimrxiv.com" />
     <meta property="og:see_also" content="https://www.crimrxiv.com/consortium" />
     <meta property="og:see_also" content="https://crimrxiv.ar.io" />
@@ -51,6 +51,37 @@
     <link rel="dns-prefetch" href="https://crimconsortium.github.io" />
     <link rel="dns-prefetch" href="https://app.joinit.com" />
     <link rel="dns-prefetch" href="https://github.com" />
+
+    <!-- Google tag (gtag.js) — Google Ads -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=AW-18294351442"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+
+      // Consent Mode v2 defaults — explicitly grant so nothing silently downgrades later.
+      gtag('consent', 'default', {
+        'ad_storage': 'granted',
+        'ad_user_data': 'granted',
+        'ad_personalization': 'granted',
+        'analytics_storage': 'granted',
+        'functionality_storage': 'granted',
+        'personalization_storage': 'granted',
+        'security_storage': 'granted'
+      });
+
+      // Persist GCLID across the Stripe checkout redirect (first-party localStorage).
+      try {
+        var params = new URLSearchParams(window.location.search);
+        var gclid = params.get('gclid');
+        if (gclid) {
+          localStorage.setItem('gclid', gclid);
+          localStorage.setItem('gclid_ts', Date.now().toString());
+        }
+      } catch (e) {}
+
+      gtag('js', new Date());
+      gtag('config', 'AW-18294351442');
+    </script>
 
     <!-- Fonts (same family as sibling dashboards) -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />

@@ -62,13 +62,35 @@
     <!-- Stripe pricing table -->
     <script async src="https://js.stripe.com/v3/pricing-table.js"></script>
 
-    <!-- Google tag (gtag.js) -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-8T4E6YJ1FG"></script>
+    <!-- Google tag (gtag.js) — Google Ads -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=AW-18294351442"></script>
     <script>
       window.dataLayer = window.dataLayer || [];
       function gtag(){dataLayer.push(arguments);}
+
+      // Consent Mode v2 defaults — explicitly grant so nothing silently downgrades later.
+      gtag('consent', 'default', {
+        'ad_storage': 'granted',
+        'ad_user_data': 'granted',
+        'ad_personalization': 'granted',
+        'analytics_storage': 'granted',
+        'functionality_storage': 'granted',
+        'personalization_storage': 'granted',
+        'security_storage': 'granted'
+      });
+
+      // Persist GCLID across the Stripe checkout redirect (first-party localStorage).
+      try {
+        var params = new URLSearchParams(window.location.search);
+        var gclid = params.get('gclid');
+        if (gclid) {
+          localStorage.setItem('gclid', gclid);
+          localStorage.setItem('gclid_ts', Date.now().toString());
+        }
+      } catch (e) {}
+
       gtag('js', new Date());
-      gtag('config', 'G-8T4E6YJ1FG');
+      gtag('config', 'AW-18294351442');
     </script>
 
     <style>
