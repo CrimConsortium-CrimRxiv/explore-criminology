@@ -3,8 +3,8 @@
 A lightweight public landing page that points visitors to CrimConsortium's
 family of criminology dashboards:
 
-- **Experts** — [Faculty Explorer](https://crimconsortium.github.io/criminology-faculty-explorer/)
-- **Mentors** — [Mentor Match](https://crimconsortium.github.io/mentor-match/)
+- **Experts** — [Faculty Explorer](https://crimconsortium-crimrxiv.github.io/criminology-faculty-explorer/)
+- **Mentors** — [Mentor Match](https://crimconsortium-crimrxiv.github.io/mentor-match/)
 - **Jobs** — [Jobs Explorer](https://crimconsortium-crimrxiv.github.io/criminology-jobs/)
 
 The site is fully static and hosted via GitHub Pages.
@@ -12,7 +12,7 @@ The site is fully static and hosted via GitHub Pages.
 ## Hosting
 
 - **Primary URL:** https://crimconsortium.com/
-- **Fallback:** https://crimconsortium.github.io/explore-criminology/
+- **Fallback:** https://crimconsortium-crimrxiv.github.io/explore-criminology/
 
 The custom domain is configured via the `CNAME` file at the repo root and
 apex `A`/`AAAA` records in Cloudflare DNS pointing at GitHub Pages.
