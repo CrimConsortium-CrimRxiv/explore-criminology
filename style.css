@@ -599,6 +599,14 @@ a:hover { border-bottom-color: var(--color-primary); }
   box-shadow: var(--shadow-md);
   transform: translateY(-2px);
 }
+
+/* Keep the black member tiles distinguishable from the dark page background. */
+[data-theme="dark"] .member-tile {
+  border: 1px solid var(--color-border);
+}
+[data-theme="dark"] .member-tile:hover {
+  border-color: var(--color-primary);
+}
 .member-tile::after {
   content: "";
   position: absolute;
