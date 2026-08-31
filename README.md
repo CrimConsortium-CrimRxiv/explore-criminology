@@ -5,7 +5,7 @@ family of criminology dashboards:
 
 - **Experts** — [Faculty Explorer](https://crimconsortium.github.io/criminology-faculty-explorer/)
 - **Mentors** — [Mentor Match](https://crimconsortium.github.io/mentor-match/)
-- **Jobs** — [Jobs Explorer](https://crimconsortium.github.io/criminology-jobs/)
+- **Jobs** — [Jobs Explorer](https://crimconsortium-crimrxiv.github.io/criminology-jobs/)
 
 The site is fully static and hosted via GitHub Pages.
 
