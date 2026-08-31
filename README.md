@@ -3,9 +3,9 @@
 A lightweight public landing page that points visitors to CrimConsortium's
 family of criminology dashboards:
 
-- **Experts** — [Faculty Explorer](https://crimconsortium-crimrxiv.github.io/faculty-explorer/)
-- **Mentors** — [Mentor Match](https://crimconsortium-crimrxiv.github.io/mentor-match/)
-- **Jobs** — [Jobs Explorer](https://crimconsortium-crimrxiv.github.io/criminology-jobs/)
+- **Experts** — [Faculty Explorer](https://faculty.crimconsortium.com/)
+- **Mentors** — [Mentor Match](https://mentors.crimconsortium.com/)
+- **Jobs** — [Jobs Explorer](https://jobs.crimconsortium.com/)
 
 The site is fully static and hosted via GitHub Pages.
 
